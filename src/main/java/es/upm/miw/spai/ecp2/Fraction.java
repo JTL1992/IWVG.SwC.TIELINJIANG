@@ -60,4 +60,13 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public Fraction multiplication(int numerator, int denominator){
+    	int newNumerator;
+    	int newDenominator;
+    	
+    	newNumerator = this.numerator * numerator;
+    	newDenominator = this.denominator * denominator;
+    	
+    	return new Fraction(newNumerator, newDenominator);
+    }
 }
