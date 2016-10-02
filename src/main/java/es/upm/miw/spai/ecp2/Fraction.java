@@ -69,4 +69,13 @@ public class Fraction {
     	
     	return new Fraction(newNumerator, newDenominator);
     }
+
+    public boolean isPropia() {
+        return  numerator < denominator;
+    }
+
+    public boolean isImPropia() {
+        return  numerator > denominator;
+    }        
+    
 }
