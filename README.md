@@ -1,6 +1,12 @@
 # IWVG.SwC.TIELINJIANG
 Proyecto colaborativo
 
+# Descripción del proyecto
+* _Point_, maneja coordenadas de dos dimensiones, ofreciendo diversas funcionalidades
+* _User_, almacena un identificador, el nombre y apellido, controlando el formato del mismo y mostrando diferentes representaciones
+* _DecimalCollection_, maneja una colección de valores decimales de tipo double
+* _Fraction_, maneja fracciones matemáticas
+
 # Programadores
 
 * [Alfonso Ayuso](https://github.com/fonsi5)
@@ -13,4 +19,4 @@ Proyecto colaborativo
 
 # TRAVIS CI
 
-[Travis CI]()
+[Travis CI](https://travis-ci.org/JTL1992/IWVG.SwC.TIELINJIANG)
