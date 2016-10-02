@@ -38,10 +38,4 @@ public class DecimalCollectionTest {
         assertEquals(3, this.dc.higher(), 10e-5);
     }
 
-    @Test
-    public void testMultiplication() {
-        assertEquals(-12, this.dc.multiplication(), 10e-5);
-        this.dc = new DecimalCollection();
-        assertEquals(0, this.dc.multiplication(), 10e-5);
-    }    
 }
