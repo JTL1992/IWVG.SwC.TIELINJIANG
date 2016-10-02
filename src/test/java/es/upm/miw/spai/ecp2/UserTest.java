@@ -39,4 +39,9 @@ public class UserTest {
 		assertEquals("J.R", u.initials());
 	}
 
+    @Test
+    public void testMayus() {
+        assertEquals("JUAN",u.mayus());
+    }	
+	
 }
