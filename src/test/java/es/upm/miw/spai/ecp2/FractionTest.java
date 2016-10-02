@@ -29,4 +29,12 @@ public class FractionTest {
 		assertEquals((double)1/2, f.decimal(), 10e-3);
 	}
 
+	@Test
+	public void testMultiplication(){
+		int numerator = 2;
+		int denominator = 3;
+		
+		assertEquals(2, f.multiplication(numerator, denominator).getNumerator());
+		assertEquals(6, f.multiplication(numerator, denominator).getDenominator());
+	}
 }
