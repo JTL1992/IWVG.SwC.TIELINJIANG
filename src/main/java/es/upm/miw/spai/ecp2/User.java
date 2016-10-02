@@ -35,6 +35,6 @@ public class User {
     }
 
     public String initials() {
-        return this.name.substring(0, 1) + ".";
+        return this.name.substring(0, 1) + "."+this.familyName.substring(0, 1);
     }
 }
