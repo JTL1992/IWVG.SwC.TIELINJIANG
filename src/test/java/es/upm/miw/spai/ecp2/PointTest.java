@@ -12,6 +12,13 @@ public class PointTest {
     public void before() {
         pt = new Point(2, 3);
     }
+    
+    @Test
+    public void testPuntoIntIntInt(){
+    	assertEquals(2, pt.getX());
+        assertEquals(3, pt.getY());
+        assertEquals(0, pt.getZ());
+    }
 
     @Test
     public void testPuntoIntInt() {
@@ -45,7 +52,7 @@ public class PointTest {
 
     @Test
     public void testToString() {
-        assertEquals("Point[2,3]", pt.toString());
+        assertEquals("Point[2,3,0]", pt.toString());
     }
 
 }
