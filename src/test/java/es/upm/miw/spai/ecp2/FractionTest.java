@@ -29,4 +29,36 @@ public class FractionTest {
 		assertEquals((double)1/2, f.decimal(), 10e-3);
 	}
 
+	@Test
+	public void testMultiplication(){
+		int numerator = 2;
+		int denominator = 3;
+		
+		assertEquals(2, f.multiplication(numerator, denominator).getNumerator());
+		assertEquals(6, f.multiplication(numerator, denominator).getDenominator());
+	}
+    
+	@Test
+	public void testIsPropia() {
+        assertEquals(true,f.isPropia());
+        f = new Fraction(2,2);
+        assertEquals(false,f.isPropia());
+        f = new Fraction(3,2);
+        assertEquals(false,f.isPropia());        
+    }   
+
+	@Test
+	public void testIsImPropia() {
+        assertEquals(false,f.isImPropia());
+        f = new Fraction(2,2);
+        assertEquals(false,f.isImPropia());
+        f = new Fraction(3,2);
+        assertEquals(true,f.isImPropia());        
+    }	
+	
+	@Test
+	public void testIsEquivalente(){
+		assertEquals(true, f.isEquivalente(new Fraction(2,4)));
+	}
+	
 }
